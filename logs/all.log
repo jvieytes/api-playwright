@@ -1,0 +1,8 @@
+2026-03-11 18:25:56:2556 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-11 18:25:58:2558 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-11 18:25:58:2558 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-11 18:25:58:2558 [31merror[39m: [31mEsto es un error[39m
+2026-03-11 18:25:58:2558 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-11 18:25:58:2558 [31merror[39m: [31mEsto es un error[39m
+2026-03-11 18:25:58:2558 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-11 18:25:59:2559 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
