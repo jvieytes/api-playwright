@@ -6,3 +6,165 @@
 2026-03-11 18:25:58:2558 [31merror[39m: [31mEsto es un error[39m
 2026-03-11 18:25:58:2558 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
 2026-03-11 18:25:59:2559 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-11 18:41:43:4143 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-11 18:41:47:4147 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 18:57:38:5738 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 18:57:40:5740 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 18:57:40:5740 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 18:57:40:5740 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 18:57:40:5740 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 18:57:40:5740 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 18:57:40:5740 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 18:57:42:5742 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 18:58:08:588 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 18:58:10:5810 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 18:58:10:5810 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 18:58:10:5810 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 18:58:10:5810 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 18:58:10:5810 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 18:58:10:5810 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 18:58:11:5811 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:00:48:048 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:00:50:050 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:00:50:050 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:00:50:050 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:00:50:050 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:00:50:050 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:00:50:050 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:00:52:052 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:01:00:10 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:01:01:11 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:01:01:11 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:01:02:12 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:01:02:12 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:01:02:12 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:01:02:12 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:01:03:13 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:08:14:814 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:08:17:817 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:08:17:817 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:08:17:817 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:08:17:817 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:08:17:817 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:08:17:817 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:08:19:819 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:08:54:854 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:08:56:856 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:08:56:856 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:08:56:856 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:08:56:856 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:08:56:856 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:08:56:856 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:08:58:858 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:12:52:1252 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:12:54:1254 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:12:54:1254 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:12:54:1254 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:12:54:1254 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:12:54:1254 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:12:54:1254 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:12:56:1256 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:14:22:1422 [32minfo[39m: [32mBefore all tests -> Creating Database[39m
+2026-03-12 19:14:24:1424 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:14:24:1424 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:14:24:1424 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:14:24:1424 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:14:24:1424 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:14:24:1424 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:14:26:1426 [32minfo[39m: [32mAfter all tests -> Deleting Database[39m
+2026-03-12 19:16:01:161 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:16:01:161 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:16:01:161 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:16:01:161 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:16:01:161 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:16:01:161 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:24:33:2433 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:24:33:2433 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:24:33:2433 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:24:33:2433 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:24:33:2433 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:24:33:2433 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:25:43:2543 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:25:43:2543 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:25:44:2544 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:25:44:2544 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:25:44:2544 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:25:44:2544 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:26:04:264 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:26:04:264 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:26:04:264 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:26:04:264 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:26:04:264 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:26:04:264 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:53:18:5318 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:53:18:5318 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:53:18:5318 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:53:18:5318 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:53:18:5318 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:53:18:5318 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:53:47:5347 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:53:47:5347 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:53:47:5347 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:53:47:5347 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:53:47:5347 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:53:47:5347 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:54:09:549 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:54:09:549 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:54:09:549 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:54:09:549 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:54:09:549 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:54:09:549 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:55:23:5523 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:55:23:5523 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:55:23:5523 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:55:23:5523 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:55:23:5523 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:55:23:5523 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:57:20:5720 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:57:20:5720 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:57:20:5720 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:57:20:5720 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:57:20:5720 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:57:20:5720 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:59:01:591 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:59:01:591 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 19:59:01:591 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:59:01:591 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 19:59:01:591 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 19:59:01:591 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:00:05:05 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:00:05:05 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:00:05:05 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:00:05:05 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:00:05:05 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:00:05:05 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:05:13:513 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:05:13:513 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:05:13:513 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:05:13:513 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:05:13:513 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:05:13:513 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:10:38:1038 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:10:38:1038 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:10:38:1038 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:10:38:1038 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:10:38:1038 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:10:38:1038 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:11:22:1122 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:11:22:1122 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:11:22:1122 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:11:22:1122 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:11:22:1122 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:11:22:1122 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:12:07:127 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:12:07:127 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:12:07:127 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:12:07:127 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:12:07:127 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:12:07:127 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:17:33:1733 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:17:33:1733 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:17:33:1733 [32minfo[39m: [32mMascota creada satisfactoriamente[39m
+2026-03-12 20:17:33:1733 [32minfo[39m: [32mCreando una nueva mascota[39m
+2026-03-12 20:17:33:1733 [31merror[39m: [31mEsto es un error[39m
+2026-03-12 20:17:33:1733 [32minfo[39m: [32mMascota creada satisfactoriamente[39m

@@ -1,6 +1,7 @@
 import test, { APIRequestContext, APIResponse, expect } from "@playwright/test";
 import Logger from "../../utils/Logger";
 import { NewPetResponseModel } from "../../models/newPetResponseModel";
+import * as allure from 'allure-js-commons';
 
 export class CheckPetWasCreated {
     private expectedPet: any

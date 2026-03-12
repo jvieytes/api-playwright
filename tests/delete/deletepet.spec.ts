@@ -1,6 +1,16 @@
 import test from "@playwright/test"
+import * as allure from "allure-js-commons";
+
+async function setDeletePetHierarchy(displayName: string) {
+    await allure.displayName(displayName);
+    await allure.parentSuite("Servicio Mascotas");
+    await allure.suite("Eliminar Mascota");
+}
+
 
 test('Eliminar una mascota', async ({ request }) => {
+
+  await setDeletePetHierarchy("Eliminar una mascota")
 
   const newPetRequest = {
     name: "Bingo3",

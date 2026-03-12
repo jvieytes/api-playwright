@@ -1,6 +1,16 @@
 import { test, expect, request } from '@playwright/test';
 
+import * as allure from "allure-js-commons";
+
+async function setGetUpdatePetHierarchy(displayName: string) {
+    await allure.displayName(displayName);
+    await allure.parentSuite("Servicio Mascotas");
+    await allure.suite("Actualizar y Obtener Mascotas");
+}
+
 test('Actualizar una nueva mascota', async ({ request }) => {
+
+  await setGetUpdatePetHierarchy("Actualizar mascota")
 
   const newPetRequest = {
     name: "Bingo3",
@@ -31,6 +41,8 @@ test('Actualizar una nueva mascota', async ({ request }) => {
 
 test('Actualizar una nueva mascota parcialmente', async ({ request }) => {
 
+  await setGetUpdatePetHierarchy("Actualizar mascota Parcialmente")
+
   const newPetRequest = {
     name: "Bingo3",
     type: "Perro",
@@ -58,6 +70,8 @@ test('Actualizar una nueva mascota parcialmente', async ({ request }) => {
 
 test('Obtener una mascota', async ({ request }) => {
 
+  await setGetUpdatePetHierarchy("Obteniendo una mascota")
+
   const newPetRequest = {
     name: "Bingo3",
     type: "Perro",
@@ -80,6 +94,8 @@ test('Obtener una mascota', async ({ request }) => {
 
 test('Obtener todas las mascota', async ({ request }) => {
 
+  await setGetUpdatePetHierarchy("Obtener todas las mascotas")
+
   const getAllPetResponse = await request.get('/pets')
 
   console.log("Response: ", await getAllPetResponse.json())
@@ -87,6 +103,8 @@ test('Obtener todas las mascota', async ({ request }) => {
 })
 
 test('Autenticacion Basci', async ({ request }) => {
+
+  await setGetUpdatePetHierarchy("Autenticacion basica")
 
   const credentialsBase64 = btoa('admin:password123')
 
@@ -102,6 +120,8 @@ test('Autenticacion Basci', async ({ request }) => {
 })
 
 test('Autenticacion Bearer', async ({ request }) => {
+
+  await setGetUpdatePetHierarchy("Autenticacion bearer")
 
   const authenticationTokenResponse = await request.post('/login',{
     data:{
