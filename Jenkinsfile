@@ -30,17 +30,18 @@ pipeline {
             }
         }
 
-        stage('Crear Reporte Allure') {
+        stage('Generate Allure Report') {
             steps {
-                script {
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: 'allure-results']]
-                    ])
-                }
+                bat 'npx allure generate allure-results -o allure-report --clean'
+                publishHTML(target: [
+                    allowMissing: true,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'allure-report',
+                    reportFiles: 'index.html',
+                    reportName: 'Allure Report',
+                    reportTitles: 'Allure Report'
+                ])
             }
         }
     }
