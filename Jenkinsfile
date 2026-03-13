@@ -30,26 +30,24 @@ pipeline {
             }
         }
 
-        stage('Generate Allure HTML') {
+        stage('Crear Reporte Allure') {
             steps {
-                bat 'npx allure generate allure-results -o allure-report --clean'
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+                    ])
+                }
             }
         }
     }
 
     post {
         always {
-            publishHTML(target: [
-                allowMissing: true,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'allure-report',
-                reportFiles: 'index.html',
-                reportName: 'Allure Report',
-                reportTitles: 'Allure Report'
-            ])
-
-            archiveArtifacts artifacts: 'allure-results/**, allure-report/**', allowEmptyArchive: true
+            deleteDir()
         }
     }
 }
