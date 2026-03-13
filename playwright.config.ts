@@ -35,8 +35,8 @@ export default defineConfig({
     baseURL: process.env.baseURL ? process.env.baseURL : 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
-    screenshot: 'on-first-failure',
+    trace: 'off',
+    screenshot: 'off',
   },
 
   /* Configure projects for major browsers */
