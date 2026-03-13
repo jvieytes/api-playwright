@@ -1,23 +1,35 @@
-import test, { APIRequestContext, APIResponse } from "@playwright/test";
+import { APIRequestContext } from "@playwright/test";
 import { NewPetRequestModel } from "../../models/newPetRequestModel";
+import { NewPetResponseModel } from "../../models/newPetResponseModel";
+import { ApiTransactionModel } from "../../models/apiTransactionModel";
 
 export class CreateNewPet {
-    private request: APIRequestContext
+  constructor(private readonly request: APIRequestContext) {}
 
-    constructor(request: APIRequestContext) {
-        this.request = request
-    }
+  public async withInfo(
+    newPetRequest: NewPetRequestModel
+  ): Promise<ApiTransactionModel<NewPetRequestModel, NewPetResponseModel>> {
+    const url = "/pets";
+    const headers = {
+      "Content-Type": "application/json",
+      "User-Agent": "PostmanRuntime/7.52.0"
+    };
 
-    public async withInfo(newPetRequest:NewPetRequestModel): Promise<APIResponse> {
+    const response = await this.request.post(url, {
+      data: newPetRequest,
+      headers
+    });
 
-        return await test.step(`Creando una nueva mascota ${JSON.stringify(newPetRequest)}`, async() => {
-            return await this.request.post('/pets', {
-                data: newPetRequest,
-                headers: {
-                    'Content-Type': 'application/json',
-                    'User-Agent': 'PostmanRuntime/7.52.0'
-                }
-            })
-        })
-    }
+    const responseBody = (await response.json()) as NewPetResponseModel;
+
+    return {
+      method: "POST",
+      url,
+      requestHeaders: headers,
+      requestBody: newPetRequest,
+      responseStatus: response.status(),
+      responseHeaders: response.headersArray(),
+      responseBody
+    };
+  }
 }
