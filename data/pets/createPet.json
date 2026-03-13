@@ -1,0 +1,37 @@
+{
+  "service": "Crear Mascotas",
+  "endpoint": "/pets",
+  "method": "POST",
+  "cases": [
+    {
+      "testName": "Crear mascota válida",
+      "typeCase": "positivo",
+      "expectedStatus": 201,
+      "request": {
+        "name": "__AUTO__",
+        "type": "Perro",
+        "age": 1
+      }
+    },
+    {
+      "testName": "Crear mascota sin nombre",
+      "typeCase": "negativo",
+      "expectedStatus": 400,
+      "request": {
+        "name": "",
+        "type": "Perro",
+        "age": 1
+      }
+    },
+    {
+      "testName": "Crear mascota con edad inválida",
+      "typeCase": "negativo",
+      "expectedStatus": 400,
+      "request": {
+        "name": "__AUTO__",
+        "type": "Perro",
+        "age": -1
+      }
+    }
+  ]
+}

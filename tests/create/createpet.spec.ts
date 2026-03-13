@@ -1,11 +1,24 @@
 import test from "@playwright/test";
-import Logger from "../../utils/Logger";
-import { CreateNewPet } from "../../tasks/create/createNewPet";
-import { CheckPetWasCreated } from "../../tasks/create/checkPetWasCreated";
-import { NewPetRequestModel } from "../../models/newPetRequestModel";
 import { faker } from "@faker-js/faker";
 import * as allure from "allure-js-commons";
+
+import { JsonDataReader } from "../../utils/JsonDataReader";
 import { ApiReportHelper } from "../../utils/ApiReportHelper";
+import { CreateNewPet } from "../../tasks/create/createNewPet";
+import { ValidateCreatePetResponse } from "../../tasks/create/validateCreatePetResponse";
+
+import {
+    CreatePetDataFileModel,
+    CreatePetCaseModel
+} from "../../models/createPetDataFileModel";
+import { NewPetRequestModel } from "../../models/newPetRequestModel";
+
+function buildRequest(request: NewPetRequestModel): NewPetRequestModel {
+    return {
+        ...request,
+        name: request.name === "__AUTO__" ? faker.animal.cat() : request.name
+    };
+}
 
 async function setCreatePetHierarchy(displayName: string) {
     await allure.displayName(displayName);
@@ -13,52 +26,39 @@ async function setCreatePetHierarchy(displayName: string) {
     await allure.suite("Crear Mascotas");
 }
 
-test("Crear una nueva mascota", async ({ request }) => {
-    await setCreatePetHierarchy("Crear una nueva mascota");
+const createPetData = JsonDataReader.read<CreatePetDataFileModel>(
+    "data/pets/createPet.json"
+);
 
-    const newPetRequest: NewPetRequestModel = {
-        name: faker.animal.cat(),
-        type: "Perro",
-        age: 1
-    };
+for (const testCase of createPetData.cases) {
+    test(testCase.testName, async ({ request }) => {
+        await setCreatePetHierarchy(testCase.testName);
 
-    Logger.info("Creando una nueva mascota");
+        const finalRequest = buildRequest(testCase.request);
 
-    const createNewPet = new CreateNewPet(request);
-    const validator = new CheckPetWasCreated(newPetRequest);
+        const runtimeCase: CreatePetCaseModel = {
+            ...testCase,
+            request: finalRequest
+        };
 
-    const tx = await test.step("POST /pets - Crear mascota", async (step) => {
-        const result = await createNewPet.withInfo(newPetRequest);
-        await ApiReportHelper.attachTransaction(step, result);
-        return result;
+        const createNewPet = new CreateNewPet(request);
+        const validator = new ValidateCreatePetResponse(runtimeCase);
+
+        const tx = await test.step(
+            `${createPetData.method} ${createPetData.endpoint} | ${runtimeCase.testName}`,
+            async (step) => {
+                const result = await createNewPet.withInfo(
+                    createPetData.endpoint,
+                    finalRequest
+                );
+
+                await ApiReportHelper.attachTransaction(step, result);
+                return result;
+            }
+        );
+
+        await test.step("Validar respuesta", async () => {
+            await validator.withInfo(tx);
+        });
     });
-
-    await test.step("Validar mascota creada", async () => {
-        await validator.withInfo(tx);
-    });
-});
-
-test("Crear una nueva mascota2", async ({ request }) => {
-    await setCreatePetHierarchy("Crear una nueva mascota2");
-
-    const newPetRequest: NewPetRequestModel = {
-        name: faker.animal.cat(),
-        type: "Perro",
-        age: 1
-    };
-
-    Logger.info("Creando una nueva mascota");
-
-    const createNewPet = new CreateNewPet(request);
-    const validator = new CheckPetWasCreated(newPetRequest);
-
-    const tx = await test.step("POST /pets - Crear mascota 2", async (step) => {
-        const result = await createNewPet.withInfo(newPetRequest);
-        await ApiReportHelper.attachTransaction(step, result);
-        return result;
-    });
-
-    await test.step("Validar mascota creada", async () => {
-        await validator.withInfo(tx);
-    });
-});
+}

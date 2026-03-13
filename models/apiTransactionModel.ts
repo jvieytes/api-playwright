@@ -3,7 +3,7 @@ export interface HeaderItem {
   value: string;
 }
 
-export interface ApiTransactionModel<TRequest, TResponse> {
+export interface ApiTransactionModel<TRequest, TResponse = unknown> {
   method: string;
   url: string;
   requestHeaders: Record<string, string>;

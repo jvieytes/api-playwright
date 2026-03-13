@@ -19,14 +19,14 @@ export class ApiReportHelper {
       requestBody: TRequest;
       responseStatus: number;
       responseHeaders: unknown;
-      responseBody: TResponse | string;
+      responseBody: TResponse;
     }
   ): Promise<void> {
     await step.attach("PreRequest", {
       body: this.pretty({
         method: tx.method,
         url: tx.url,
-        expectedStatus: tx.responseStatus
+        responseStatus: tx.responseStatus
       }),
       contentType: "application/json"
     });
@@ -47,14 +47,8 @@ export class ApiReportHelper {
     });
 
     await step.attach("Response Body", {
-      body:
-        typeof tx.responseBody === "string"
-          ? tx.responseBody
-          : this.pretty(tx.responseBody),
-      contentType:
-        typeof tx.responseBody === "string"
-          ? "text/plain"
-          : "application/json"
+      body: this.pretty(tx.responseBody),
+      contentType: "application/json"
     });
   }
 }
