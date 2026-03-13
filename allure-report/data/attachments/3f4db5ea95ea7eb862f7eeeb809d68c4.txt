@@ -1,0 +1,5 @@
+Response:  {
+  status: 'success',
+  message: 'Pet found',
+  data: { id: 1773364867469, name: 'Bingo3', type: 'Perro', age: 1 }
+}

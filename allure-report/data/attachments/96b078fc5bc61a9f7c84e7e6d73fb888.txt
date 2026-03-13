@@ -1,0 +1,15 @@
+2026-03-12 22:21:07:217 info: Creando una nueva mascota
+{"status":"success","message":"Pet created","data":{"id":1773364867811,"name":"Oriental","type":"Perro","age":1}}
+name: X-Powered-By value: Express
+name: Content-Type value: application/json; charset=utf-8
+name: Content-Length value: 113
+name: ETag value: W/"71-nxh9hLsFg0oW4uCg43V1d9RUM5s"
+name: Date value: Fri, 13 Mar 2026 01:21:07 GMT
+name: Connection value: keep-alive
+name: Keep-Alive value: timeout=5
+Keep Alive Header Value:  timeout=5
+status: success
+message: Pet created
+data type: Perro
+2026-03-12 22:21:07:217 error: Esto es un error
+2026-03-12 22:21:07:217 info: Mascota creada satisfactoriamente

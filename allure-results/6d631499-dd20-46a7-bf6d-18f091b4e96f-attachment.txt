@@ -1,0 +1,1 @@
+{"status":"success","message":"Pet updated","data":{"id":1773364867471,"name":"Bingo3 Update","type":"Loro","age":5}}

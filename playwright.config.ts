@@ -25,7 +25,7 @@ export default defineConfig({
   reporter: [
     ['allure-playwright',{
       suiteTitle: false,
-      detail: false,
+      detail: true,
       resultsDir: 'allure-results'
     }]
   ],
