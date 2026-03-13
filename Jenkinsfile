@@ -24,24 +24,25 @@ pipeline {
             }
         }
 
-        stage('Run Playwright tests') {
+        stage('Ejecutar pruebas') {
             steps {
-                bat 'npx playwright test'
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    bat 'npx playwright test'
+                }
             }
         }
 
-        stage('Generate Allure Report') {
+        stage('Crear Reporte Allure') {
             steps {
-                bat 'npx allure generate allure-results -o allure-report --clean'
-                publishHTML(target: [
-                    allowMissing: true,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'allure-report',
-                    reportFiles: 'index.html',
-                    reportName: 'Allure Report',
-                    reportTitles: 'Allure Report'
-                ])
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+                    ])
+                }
             }
         }
     }
