@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "message": "Pet created",
+  "data": {
+    "id": 1773374734676,
+    "name": "American Wirehair",
+    "type": "Perro",
+    "age": 1
+  }
+}

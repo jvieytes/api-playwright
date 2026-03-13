@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "message": "Pet created",
+  "data": {
+    "id": 1773374734723,
+    "name": "LaPerm",
+    "type": "Perro",
+    "age": -1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "message": "Name, type, and age are required",
+  "data": null
+}

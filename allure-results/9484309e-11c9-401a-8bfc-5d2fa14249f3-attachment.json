@@ -1,0 +1,30 @@
+[
+  {
+    "name": "X-Powered-By",
+    "value": "Express"
+  },
+  {
+    "name": "Content-Type",
+    "value": "application/json; charset=utf-8"
+  },
+  {
+    "name": "Content-Length",
+    "value": "122"
+  },
+  {
+    "name": "ETag",
+    "value": "W/\"7a-RP4hznByXaYbGtztbyYlnw6wpvE\""
+  },
+  {
+    "name": "Date",
+    "value": "Fri, 13 Mar 2026 04:05:34 GMT"
+  },
+  {
+    "name": "Connection",
+    "value": "keep-alive"
+  },
+  {
+    "name": "Keep-Alive",
+    "value": "timeout=5"
+  }
+]

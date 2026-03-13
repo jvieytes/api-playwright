@@ -1,2 +1,0 @@
-Response status:  200
-Response status:  Hello admin, you have accessed a protected endpoint!

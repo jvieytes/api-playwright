@@ -1,0 +1,1 @@
+{"status":"success","message":"Pet updated successfully","data":{"id":1773374734396,"name":"Bingo3","type":"Perro","age":5}}
