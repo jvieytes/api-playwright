@@ -26,7 +26,8 @@ export class ApiReportHelper {
       body: this.pretty({
         method: tx.method,
         url: tx.url,
-        responseStatus: tx.responseStatus
+        responseStatus: tx.responseStatus,
+        arguments: 'Caso Erroneo',
       }),
       contentType: "application/json"
     });
