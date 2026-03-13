@@ -25,7 +25,7 @@ export default defineConfig({
   reporter: [
     ['allure-playwright',{
       suiteTitle: false,
-      detail: true,
+      detail: false,
       resultsDir: 'allure-results'
     }]
   ],
@@ -35,8 +35,8 @@ export default defineConfig({
     baseURL: process.env.baseURL ? process.env.baseURL : 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
-    screenshot: 'on',
+    trace: 'retain-on-failure',
+    screenshot: 'on-first-failure',
   },
 
   /* Configure projects for major browsers */
